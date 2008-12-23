@@ -1,0 +1,16 @@
+Format-Specification: http://wiki.debian.org/Proposals/CopyrightFormat?action=recall&rev=143
+Upstream-Name: tevent
+
+Files: *
+Copyright: Copyright 2003-2007, Andrew Tridgell <tridge@samba.org>
+Copyright: Copyright 2005, Stefan Metzmacher <metze@samba.org>
+Copyright: Copyright 2005, Jelmer Vernooij <jelmer@samba.org>
+License: LGPL-3+
+ On Debian systems the full text of the GNU General Public License can be found
+ in the `/usr/share/common-licenses/LGPL' file.
+
+Files: debian/*
+Copyright: Copyright 2008, Jelmer Vernooij <jelmer@samba.org>
+License: LGPL-3+
+ On Debian systems the full text of the GNU General Public License can be found
+ in the `/usr/share/common-licenses/LGPL' file.

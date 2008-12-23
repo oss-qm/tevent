@@ -1,0 +1,36 @@
+Source: tevent
+Section: devel
+Priority: optional
+Maintainer: Jelmer Vernooij <jelmer@samba.org>
+Build-Depends: debhelper (>> 5.0.0), libtalloc-dev, quilt
+Standards-Version: 3.8.0
+DM-Upload-Allowed: yes
+Vcs-Svn: svn://svn.debian.org/pkg-samba/trunk/tevent
+
+Package: libtevent1
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}
+Description: Talloc-based event loop library - shared library
+ tevent is a simple library that can handle the main event loop for an
+ application. It supports three kinds of events: timed events, file
+ descriptors becoming readable or writable and signals.
+ .
+ Talloc is used for memory management, both internally and for private
+ data provided by users of the library.
+ .
+ This package contains the shared library file.
+
+Package: libtevent-dev
+Section: libdevel
+Architecture: any
+Depends: libc6-dev, libtevent1 (= ${binary:Version})
+Description: Talloc-based event loop library - development files
+ tevent is a simple library that can handle the main event loop for an
+ application. It supports three kinds of events: timed events, file
+ descriptors becoming readable or writable and signals.
+ .
+ Talloc is used for memory management, both internally and for private
+ data provided by users of the library.
+ .
+ This package contains the development files.
