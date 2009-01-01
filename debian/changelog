@@ -1,4 +1,4 @@
-tevent (1.0.0~git20081223-1) UNRELEASED; urgency=low
+tevent (1.0.0~git20090101-1) UNRELEASED; urgency=low
 
   * Initial release. (Closes: #509225)
 
