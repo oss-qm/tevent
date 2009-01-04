@@ -8,10 +8,14 @@ Copyright: Copyright 2003-2007, Andrew Tridgell <tridge@samba.org>
 Copyright: Copyright 2005, Stefan Metzmacher <metze@samba.org>
 Copyright: Copyright 2005, Jelmer Vernooij <jelmer@samba.org>
 License: LGPL-3+
+ On Debian systems the full text of the GNU Lesser General Public License can 
+ be found in the `/usr/share/common-licenses/LGPL' file.
 
 Files: debian/*
 Copyright: Copyright 2008, Jelmer Vernooij <jelmer@samba.org>
 License: LGPL-3+
+ On Debian systems the full text of the GNU Lesser General Public License can 
+ be found in the `/usr/share/common-licenses/LGPL' file.
 
 Files: libreplace/*
 Copyright: Copyright 1992-1998, 2003, 2005, Andrew Tridgell
@@ -19,14 +23,20 @@ Copyright: Copyright 2005-2008, Jelmer Vernooij
 Copyright: Copyright 1998-2002, 2007, Jeremy Allison
 Copyright: Copyright 2008, Michael Adam
 License: LGPL-3+
+ On Debian systems the full text of the GNU Lesser General Public License can 
+ be found in the `/usr/share/common-licenses/LGPL' file.
 
 Files: libreplace/crypt.c, libreplace/getpass.c
 Copyright: Copyright 1991-1998, Free Software Foundation, Inc.
 License: LGPL-3+
+ On Debian systems the full text of the GNU Lesser General Public License can 
+ be found in the `/usr/share/common-licenses/LGPL' file.
 
 Files: libreplace/timegm.c:
 Copyright: Copyright 1997, Kungliga Tekniska Högskolan
 License: BSD-3
+ On Debian systems the full text of the 3-clause BSD license can be found in 
+ in the `/usr/share/common-licenses/BSD-3' file.
 
 Files: libreplace/getaddrinfo.c, libreplace/getaddrinfo.h
 Copyright: Copyright 1996-2005, The PostgreSQL Global Development Group
@@ -74,4 +84,5 @@ License: other
 Files: libreplace/strptime.c
 Copyright: Copyright 1996-2000, Free Software Foundation, Inc.
 License: LGPL-3+
-
+ On Debian systems the full text of the GNU Lesser General Public License can 
+ be found in the `/usr/share/common-licenses/LGPL' file.
