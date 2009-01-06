@@ -2,4 +2,4 @@ tevent (0.9.2~git20090105-1) UNRELEASED; urgency=low
 
   * Initial release. (Closes: #509225)
 
- -- Jelmer Vernooij <jelmer@samba.org>  Sat, 20 Dec 2008 17:55:07 +0100
+ -- Jelmer Vernooij <jelmer@debian.org>  Sat, 20 Dec 2008 17:55:07 +0100

@@ -8,11 +8,9 @@ else
 CFLAGS += -O2
 endif
 
-include /usr/share/quilt/quilt.make
-
 DESTDIR=$(CURDIR)/debian/tmp
 
-configure: patch configure-stamp
+configure: configure-stamp
 configure-stamp:
 	dh_testdir
 	CFLAGS="$(CFLAGS)" ./configure --prefix=/usr
@@ -24,8 +22,7 @@ build-stamp:
 	$(MAKE) all 
 	touch build-stamp
 
-clean: clean-patched unpatch
-clean-patched:
+clean: 
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
@@ -39,11 +36,11 @@ get-orig-source:
 install: build
 	dh_testdir
 	dh_testroot
-	dh_prep
+	dh_clean -k
 	dh_installdirs
 	$(MAKE) install DESTDIR=$(DESTDIR)
-	ln -s libtevent.so.1.0.0 $(DESTDIR)/usr/lib/libtevent.so.1
-	ln -s libtevent.so.1 $(DESTDIR)/usr/lib/libtevent.so
+	ln -s libtevent.so.0.* $(DESTDIR)/usr/lib/libtevent.so.0
+	ln -s libtevent.so.0 $(DESTDIR)/usr/lib/libtevent.so
 	# No python for now
 	rm -f $(DESTDIR)/usr/lib/python*/site-packages/tevent.so
 	dh_install --fail-missing --list-missing --sourcedir=$(DESTDIR)
@@ -60,7 +57,6 @@ binary-arch: build install
 	dh_compress
 	dh_fixperms
 	dh_makeshlibs
-	dh_pycentral
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol
