@@ -1,3 +1,9 @@
+tevent (0.9.2~git20090105-2) UNRELEASED; urgency=low
+
+  * Add dependency on libaio-dev.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Mon, 02 Feb 2009 23:33:20 +0100
+
 tevent (0.9.2~git20090105-1) unstable; urgency=low
 
   * Initial release. (Closes: #509225)
