@@ -3,7 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: Jelmer Vernooij <jelmer@debian.org>
 Build-Depends: debhelper (>> 5.0.0), libtalloc-dev, libaio-dev
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 Vcs-Svn: svn://svn.debian.org/pkg-samba/trunk/tevent
 
 Package: libtevent0
