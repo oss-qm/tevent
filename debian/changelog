@@ -1,3 +1,9 @@
+tevent (0.9.6~20090604-1) experimental; urgency=low
+
+  * New upstream snapshot.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Fri, 05 Jun 2009 01:08:49 +0200
+
 tevent (0.9.5~20090516-1) unstable; urgency=low
 
   * New upstream snapshot.
