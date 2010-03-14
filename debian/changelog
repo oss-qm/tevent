@@ -1,3 +1,9 @@
+tevent (0.9.8-2) UNRELEASED; urgency=low
+
+  * Add missing dependencies on ${misc:Depends}.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 14 Mar 2010 16:54:04 +0100
+
 tevent (0.9.8-1) unstable; urgency=low
 
   * New upstream release.

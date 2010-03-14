@@ -9,7 +9,7 @@ Vcs-Svn: svn://svn.debian.org/pkg-samba/trunk/tevent
 Package: libtevent0
 Architecture: any
 Section: libs
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: talloc-based event loop library - shared library
  tevent is a simple library that can handle the main event loop for an
  application. It supports three kinds of events: timed events, file
@@ -23,7 +23,7 @@ Description: talloc-based event loop library - shared library
 Package: libtevent-dev
 Section: libdevel
 Architecture: any
-Depends: libc6-dev, libtevent0 (= ${binary:Version}), libtalloc-dev
+Depends: libc6-dev, libtevent0 (= ${binary:Version}), libtalloc-dev, ${misc:Depends}
 Description: talloc-based event loop library - development files
  tevent is a simple library that can handle the main event loop for an
  application. It supports three kinds of events: timed events, file
