@@ -13,7 +13,9 @@ DESTDIR=$(CURDIR)/debian/tmp
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	CFLAGS="$(CFLAGS)" ./configure --prefix=/usr
+	./autogen-waf.sh
+	CFLAGS="$(CFLAGS)" ./configure --prefix=/usr --bundled-libraries=NONE \
+		   --disable-rpath --disable-rpath-install
 	touch configure-stamp
 
 build: configure build-stamp
@@ -36,11 +38,11 @@ install: build
 	dh_clean -k
 	dh_installdirs
 	$(MAKE) install DESTDIR=$(DESTDIR)
-	ln -s libtevent.so.0.* $(DESTDIR)/usr/lib/libtevent.so.0
-	ln -s libtevent.so.0 $(DESTDIR)/usr/lib/libtevent.so
+	ar cr libtevent.a bin/default/*.o
+	cp libtevent.a $(DESTDIR)/usr/lib/
 	# No python for now
 	rm -f $(DESTDIR)/usr/lib/python*/site-packages/tevent.so
-	dh_install --fail-missing --list-missing --sourcedir=$(DESTDIR)
+	dh_install --fail-missing --list-missing --sourcedir=$(DESTDIR) 
 
 binary-indep: 
 binary-arch: build install

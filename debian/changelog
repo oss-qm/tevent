@@ -1,3 +1,11 @@
+tevent (0.9.9~git20100514-1) experimental; urgency=low
+
+  * New upstream snapshot.
+  * Bump standards version to 3.8.4.
+  * Use source format 3.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Fri, 14 May 2010 18:12:51 +0200
+
 tevent (0.9.8-1) unstable; urgency=low
 
   * New upstream release.
