@@ -1,3 +1,10 @@
+tevent (0.9.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump standards version to 3.8.3.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Fri, 11 Sep 2009 22:40:00 +0200
+
 tevent (0.9.6~20090604-1) experimental; urgency=low
 
   * New upstream snapshot.

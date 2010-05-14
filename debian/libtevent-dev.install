@@ -1,5 +1,4 @@
 usr/include/tevent.h
-usr/include/tevent_internal.h
 usr/lib/pkgconfig/tevent.pc
 usr/lib/libtevent.so
 usr/lib/libtevent.a
