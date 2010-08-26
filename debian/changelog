@@ -1,6 +1,7 @@
 tevent (0.9.9~git20100522-2) experimental; urgency=low
 
-  * Bump standards version to 3.9.1 (no changes).
+  * Bump standards version to 3.9.1.
+   + Inline BSD license in copyright file.
   * Add missing build dependency on Python (required by waf).
   * Depend on talloc >= 2.0.3.
 
