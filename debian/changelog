@@ -4,8 +4,9 @@ tevent (0.9.9~git20100522-2) experimental; urgency=low
    + Inline BSD license in copyright file.
   * Add missing build dependency on Python (required by waf).
   * Depend on talloc >= 2.0.3.
+  * Switch to Bazaar.
 
- -- Jelmer Vernooij <jelmer@debian.org>  Thu, 26 Aug 2010 23:25:20 +0200
+ -- Jelmer Vernooij <jelmer@debian.org>  Thu, 26 Aug 2010 23:33:51 +0200
 
 tevent (0.9.9~git20100522-1) experimental; urgency=low
 
