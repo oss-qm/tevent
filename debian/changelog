@@ -1,3 +1,9 @@
+tevent (0.9.9~git20100522-3) UNRELEASED; urgency=low
+
+  * Add missing dependency on pkg-config.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Fri, 27 Aug 2010 02:35:21 +0200
+
 tevent (0.9.9~git20100522-2) experimental; urgency=low
 
   * Bump standards version to 3.9.1.
