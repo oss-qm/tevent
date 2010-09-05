@@ -1,6 +1,6 @@
-tevent (0.9.9~git20100522-3) UNRELEASED; urgency=low
+tevent (0.9.9~git20100522-3) experimental; urgency=low
 
-  * Add missing dependency on pkg-config and python.
+  * Add missing dependency on pkg-config and python. Closes: #595642
 
  -- Jelmer Vernooij <jelmer@debian.org>  Fri, 27 Aug 2010 02:35:21 +0200
 
