@@ -1,3 +1,9 @@
+tevent (0.9.9~git20100522-4) UNRELEASED; urgency=low
+
+  * Support building against talloc 2.0.1.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Mon, 13 Sep 2010 15:28:58 +0200
+
 tevent (0.9.9~git20100522-3) experimental; urgency=low
 
   * Add missing dependency on pkg-config and python. Closes: #595642

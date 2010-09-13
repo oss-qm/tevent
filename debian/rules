@@ -15,7 +15,8 @@ configure-stamp:
 	dh_testdir
 	./autogen-waf.sh
 	CFLAGS="$(CFLAGS)" ./configure --prefix=/usr --bundled-libraries=NONE \
-		   --disable-rpath --disable-rpath-install
+		   --disable-rpath --disable-rpath-install \
+		   --minimum-library-version=talloc:2.0.1
 	touch configure-stamp
 
 build: configure build-stamp
