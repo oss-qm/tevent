@@ -1,7 +1,7 @@
 tevent (0.9.9~git20100928-1) unstable; urgency=low
 
   * Support building against talloc 2.0.1.
-  * New upstream snapshot.
+  * New upstream snapshot. Closes: #598362
 
  -- Jelmer Vernooij <jelmer@debian.org>  Mon, 13 Sep 2010 15:28:58 +0200
 
