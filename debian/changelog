@@ -1,6 +1,7 @@
-tevent (0.9.9~git20100522-4) UNRELEASED; urgency=low
+tevent (0.9.9~git20100928-1) unstable; urgency=low
 
   * Support building against talloc 2.0.1.
+  * New upstream snapshot.
 
  -- Jelmer Vernooij <jelmer@debian.org>  Mon, 13 Sep 2010 15:28:58 +0200
 

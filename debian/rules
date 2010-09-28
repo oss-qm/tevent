@@ -13,7 +13,6 @@ DESTDIR=$(CURDIR)/debian/tmp
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	./autogen-waf.sh
 	CFLAGS="$(CFLAGS)" ./configure --prefix=/usr --bundled-libraries=NONE \
 		   --disable-rpath --disable-rpath-install \
 		   --minimum-library-version=talloc:2.0.1
@@ -25,11 +24,15 @@ build-stamp:
 	$(MAKE) all 
 	touch build-stamp
 
+get-orig-source:
+	./debian/build-orig.sh
+
 clean: 
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
-	[ ! -f Makefile ] || $(MAKE) distclean
+	-./buildtools/bin/waf clean
+	rm -rf buildtools/wafsamba/*.pyc buildtools/bin/.waf-*
 	rm -rf build
 	dh_clean
 
@@ -42,7 +45,7 @@ install: build
 	ar cr libtevent.a bin/default/*.o
 	cp libtevent.a $(DESTDIR)/usr/lib/
 	# No python for now
-	rm -f $(DESTDIR)/usr/lib/python*/site-packages/tevent.so
+	rm -f $(DESTDIR)/usr/lib/python*/*-packages/_tevent.so
 	dh_install --fail-missing --list-missing --sourcedir=$(DESTDIR) 
 
 binary-indep: 
