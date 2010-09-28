@@ -1,3 +1,9 @@
+tevent (0.9.9~git20100928-2) unstable; urgency=low
+
+  * Depend on python-dev to build new Python module. Closes: #598374
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 28 Sep 2010 17:21:10 +0200
+
 tevent (0.9.9~git20100928-1) unstable; urgency=low
 
   * Support building against talloc 2.0.1.
