@@ -1,3 +1,9 @@
+tevent (0.9.9~git20100928-2ubuntu1) UNRELEASED; urgency=low
+
+  * Add script for automatically updating dependencies.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 02 Nov 2010 08:01:53 +0100
+
 tevent (0.9.9~git20100928-2) unstable; urgency=low
 
   * Depend on python-dev to build new Python module. Closes: #598374
