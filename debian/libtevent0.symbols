@@ -1,4 +1,4 @@
-libtevent.so.1 #PACKAGE# #MINVER#
+libtevent.so.0 #PACKAGE# #MINVER#
  TEVENT_0.9.9@TEVENT_0.9.9 0.9.9~git20101215
  _tevent_add_fd@TEVENT_0.9.9 0.9.9~git20101215
  _tevent_add_signal@TEVENT_0.9.9 0.9.9~git20101215
