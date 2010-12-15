@@ -30,7 +30,12 @@ clean:
 	rm -f build-stamp configure-stamp
 	[ ! -f Makefile ] || $(MAKE) distclean
 	rm -rf build
+	rm -f buildtools/wafsamba/*.pyc
+	rm -rf buildtools/bin/.waf*
 	dh_clean
+
+get-orig-source::
+	./debian/build-orig.sh
 
 install: build
 	dh_testdir
@@ -41,7 +46,7 @@ install: build
 	ar cr libtevent.a bin/default/*.o
 	cp libtevent.a $(DESTDIR)/usr/lib/
 	# No python for now
-	rm -f $(DESTDIR)/usr/lib/python*/site-packages/tevent.so
+	rm -f $(DESTDIR)/usr/lib/python*/*-packages/_tevent.so
 	dh_install --fail-missing --list-missing --sourcedir=$(DESTDIR) 
 
 binary-indep: 
@@ -55,7 +60,7 @@ binary-arch: build install
 	dh_strip
 	dh_compress
 	dh_fixperms
-	dh_makeshlibs
+	dh_makeshlibs -- -c4
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol

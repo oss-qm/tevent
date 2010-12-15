@@ -1,3 +1,9 @@
+tevent (0.9.9~git20101215-1) UNRELEASED; urgency=low
+
+  * New upstream snapshot.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Wed, 15 Dec 2010 10:44:13 +0100
+
 tevent (0.9.9~git20100522-1) experimental; urgency=low
 
   * New upstream snapshot.
