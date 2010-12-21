@@ -17,15 +17,6 @@ libtevent.so.0 #PACKAGE# #MINVER#
  _tevent_req_nomem@TEVENT_0.9.9 0.9.9~git20101215
  _tevent_req_notify_callback@TEVENT_0.9.9 0.9.9~git20101215
  _tevent_schedule_immediate@TEVENT_0.9.9 0.9.9~git20101215
- dummy_snprintf@TEVENT_0.9.9 0.9.9~git20101215
- ev_set_blocking@TEVENT_0.9.9 0.9.9~git20101215
- ev_str_list_add@TEVENT_0.9.9 0.9.9~git20101215
- ev_str_list_length@TEVENT_0.9.9 0.9.9~git20101215
- rep_getpass@TEVENT_0.9.9 0.9.9~git20101215
- rep_strerror_r@TEVENT_0.9.9 0.9.9~git20101215
- rep_strlcat@TEVENT_0.9.9 0.9.9~git20101215
- rep_strlcpy@TEVENT_0.9.9 0.9.9~git20101215
- replace_dummy@TEVENT_0.9.9 0.9.9~git20101215
  tevent_backend_list@TEVENT_0.9.9 0.9.9~git20101215
  tevent_cleanup_pending_signal_handlers@TEVENT_0.9.9 0.9.9~git20101215
  tevent_common_add_fd@TEVENT_0.9.9 0.9.9~git20101215
