@@ -9,6 +9,19 @@ tevent (0.9.10-1) unstable; urgency=low
 
  -- Jelmer Vernooij <jelmer@debian.org>  Tue, 21 Dec 2010 19:38:38 +0100
 
+tevent (0.9.9~git20100928-2) unstable; urgency=low
+
+  * Depend on python-dev to build new Python module. Closes: #598374
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 28 Sep 2010 17:21:10 +0200
+
+tevent (0.9.9~git20100928-1) unstable; urgency=low
+
+  * Support building against talloc 2.0.1.
+  * New upstream snapshot. Closes: #598362
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Mon, 13 Sep 2010 15:28:58 +0200
+
 tevent (0.9.9~git20100522-3) experimental; urgency=low
 
   * Add missing dependency on pkg-config and python. Closes: #595642

@@ -15,7 +15,6 @@ DESTDIR=$(CURDIR)/debian/tmp
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	./autogen-waf.sh
 	CFLAGS="$(CFLAGS)" ./configure --prefix=/usr --bundled-libraries=NONE \
 		   --disable-rpath --disable-rpath-install \
 		   --minimum-library-version="$(shell ./debian/autodeps.py --minimum-library-version)"
@@ -27,18 +26,19 @@ build-stamp:
 	$(MAKE) all 
 	touch build-stamp
 
+get-orig-source:
+	./debian/build-orig.sh
+
 clean: 
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
-	[ ! -f Makefile ] || $(MAKE) distclean
+	-./buildtools/bin/waf clean
+	rm -rf buildtools/wafsamba/*.pyc buildtools/bin/.waf-*
 	rm -rf build
 	rm -f buildtools/wafsamba/*.pyc
 	rm -rf buildtools/bin/.waf*
 	dh_clean
-
-get-orig-source::
-	./debian/build-orig.sh
 
 install: build
 	dh_testdir
