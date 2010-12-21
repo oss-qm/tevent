@@ -2,9 +2,9 @@ Source: tevent
 Section: devel
 Priority: optional
 Maintainer: Jelmer Vernooij <jelmer@debian.org>
-Build-Depends: debhelper (>> 5.0.0), libtalloc-dev, libaio-dev
-Standards-Version: 3.8.3
-Vcs-Svn: svn://svn.debian.org/pkg-samba/trunk/tevent
+Build-Depends: debhelper (>> 5.0.0), libtalloc-dev (>= 2.0.4~), libaio-dev, pkg-config, python, python-talloc-dev (>= 2.0.4~)
+Standards-Version: 3.9.1
+Vcs-Bzr: http://bzr.debian.org/pkg-samba/tevent/experimental
 
 Package: libtevent0
 Architecture: any

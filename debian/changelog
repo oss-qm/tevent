@@ -1,8 +1,42 @@
-tevent (0.9.8-2) UNRELEASED; urgency=low
+tevent (0.9.9~git20101215-1) unstable; urgency=low
 
+  * New upstream snapshot.
+  * Remove reference to deprecated BSD license file.
+  * Support building against talloc 2.0.1.
+  * Add script for automatically updating dependencies.
   * Add missing dependencies on ${misc:Depends}.
 
- -- Jelmer Vernooij <jelmer@debian.org>  Sun, 14 Mar 2010 16:54:04 +0100
+ -- Jelmer Vernooij <jelmer@debian.org>  Fri, 17 Dec 2010 01:39:42 +0100
+
+tevent (0.9.9~git20100522-3) experimental; urgency=low
+
+  * Add missing dependency on pkg-config and python. Closes: #595642
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Fri, 27 Aug 2010 02:35:21 +0200
+
+tevent (0.9.9~git20100522-2) experimental; urgency=low
+
+  * Bump standards version to 3.9.1.
+   + Inline BSD license in copyright file.
+  * Add missing build dependency on Python (required by waf).
+  * Depend on talloc >= 2.0.3.
+  * Switch to Bazaar.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Thu, 26 Aug 2010 23:33:51 +0200
+
+tevent (0.9.9~git20100522-1) experimental; urgency=low
+
+  * New upstream snapshot.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 23 May 2010 15:37:56 +0200
+
+tevent (0.9.9~git20100514-1) experimental; urgency=low
+
+  * New upstream snapshot.
+  * Bump standards version to 3.8.4.
+  * Use source format 3.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Fri, 14 May 2010 18:12:51 +0200
 
 tevent (0.9.8-1) unstable; urgency=low
 
@@ -10,6 +44,12 @@ tevent (0.9.8-1) unstable; urgency=low
   * Bump standards version to 3.8.3.
 
  -- Jelmer Vernooij <jelmer@debian.org>  Fri, 11 Sep 2009 22:40:00 +0200
+
+tevent (0.9.6~20090604-1) experimental; urgency=low
+
+  * New upstream snapshot.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Fri, 05 Jun 2009 01:08:49 +0200
 
 tevent (0.9.5~20090516-1) unstable; urgency=low
 
