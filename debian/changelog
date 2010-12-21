@@ -1,12 +1,13 @@
-tevent (0.9.9~git20101221-1) unstable; urgency=low
+tevent (0.9.10-1) unstable; urgency=low
 
-  * New upstream snapshot.
+  * New upstream release.
   * Remove reference to deprecated BSD license file.
   * Support building against talloc 2.0.1.
   * Add script for automatically updating dependencies.
   * Add missing dependencies on ${misc:Depends}.
+  * Link with --as-needed.
 
- -- Jelmer Vernooij <jelmer@debian.org>  Fri, 17 Dec 2010 01:39:42 +0100
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 21 Dec 2010 19:38:38 +0100
 
 tevent (0.9.9~git20100522-3) experimental; urgency=low
 
