@@ -1,3 +1,9 @@
+tevent (0.9.11~git20110311-1) unstable; urgency=low
+
+  * New upstream snapshot.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sat, 12 Mar 2011 00:50:21 +0100
+
 tevent (0.9.10-1) unstable; urgency=low
 
   * New upstream release.

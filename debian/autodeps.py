@@ -8,7 +8,7 @@ import optparse
 import os
 import sys
 
-parser = optparse.OptionParser("deps <source-tree>")
+parser = optparse.OptionParser("%s <--minimum-library-version|--update-control> <source-tree>" % sys.argv[0])
 parser.add_option("--minimum-library-version",
     help="Print argument for --minimum-library-version", action="store_true")
 parser.add_option("--update-control", help="Update debian/control", action="store_true")
