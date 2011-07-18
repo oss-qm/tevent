@@ -2,6 +2,8 @@ libtevent.so.0 #PACKAGE# #MINVER#
  TEVENT_0.9.9@TEVENT_0.9.9 0.9.9
  TEVENT_0.9.10@TEVENT_0.9.10 0.9.10
  TEVENT_0.9.11@TEVENT_0.9.11 0.9.11~git20110311
+ TEVENT_0.9.12@TEVENT_0.9.12 0.9.12
+ TEVENT_0.9.13@TEVENT_0.9.13 0.9.13
  _tevent_add_fd@TEVENT_0.9.9 0.9.9
  _tevent_add_signal@TEVENT_0.9.9 0.9.9
  _tevent_add_timer@TEVENT_0.9.9 0.9.9
@@ -18,6 +20,7 @@ libtevent.so.0 #PACKAGE# #MINVER#
  _tevent_req_error@TEVENT_0.9.9 0.9.9
  _tevent_req_nomem@TEVENT_0.9.9 0.9.9
  _tevent_req_notify_callback@TEVENT_0.9.9 0.9.9
+ _tevent_req_oom@TEVENT_0.9.12 0.9.12
  _tevent_schedule_immediate@TEVENT_0.9.9 0.9.9
  tevent_backend_list@TEVENT_0.9.9 0.9.9
  tevent_cleanup_pending_signal_handlers@TEVENT_0.9.9 0.9.9
@@ -50,6 +53,7 @@ libtevent.so.0 #PACKAGE# #MINVER#
  tevent_re_initialise@TEVENT_0.9.9 0.9.9
  tevent_register_backend@TEVENT_0.9.9 0.9.9
  tevent_req_default_print@TEVENT_0.9.9 0.9.9
+ tevent_req_defer_callback@TEVENT_0.9.13 0.9.13
  tevent_req_is_error@TEVENT_0.9.9 0.9.9
  tevent_req_is_in_progress@TEVENT_0.9.9 0.9.9
  tevent_req_poll@TEVENT_0.9.9 0.9.9

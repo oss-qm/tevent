@@ -23,13 +23,13 @@ configure-stamp:
 build: configure build-stamp
 build-stamp:
 	dh_testdir
-	$(MAKE) all 
+	$(MAKE) all
 	touch build-stamp
 
 get-orig-source:
 	./debian/build-orig.sh
 
-clean: 
+clean:
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
@@ -50,15 +50,15 @@ install: build
 	cp libtevent.a $(DESTDIR)/usr/lib/
 	# No python for now
 	rm -f $(DESTDIR)/usr/lib/python*/*-packages/_tevent.so
-	dh_install --fail-missing --list-missing --sourcedir=$(DESTDIR) 
+	dh_install --fail-missing --list-missing --sourcedir=$(DESTDIR)
 
-binary-indep: 
+binary-indep:
 binary-arch: build install
 	dh_testdir
 	dh_testroot
-	dh_installdocs 
+	dh_installdocs
 	dh_installman
-	dh_installchangelogs 
+	dh_installchangelogs
 	dh_link
 	dh_strip
 	dh_compress
@@ -71,4 +71,4 @@ binary-arch: build install
 	dh_builddeb
 
 binary: binary-arch binary-indep
-.PHONY: build clean binary-indep binary-arch binary install configure 
+.PHONY: build clean binary-indep binary-arch binary install configure
