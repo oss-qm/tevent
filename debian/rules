@@ -12,12 +12,15 @@ LDFLAGS += -Wl,--as-needed
 
 DESTDIR=$(CURDIR)/debian/tmp
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
 	CFLAGS="$(CFLAGS)" ./configure --prefix=/usr --bundled-libraries=NONE \
 		   --disable-rpath --disable-rpath-install \
-		   --minimum-library-version="$(shell ./debian/autodeps.py --minimum-library-version)"
+		   --minimum-library-version="$(shell ./debian/autodeps.py --minimum-library-version)" \
+		   --libdir=/usr/lib/$(DEB_HOST_MULTIARCH)
 	touch configure-stamp
 
 build: configure build-stamp
@@ -47,7 +50,7 @@ install: build
 	dh_installdirs
 	$(MAKE) install DESTDIR=$(DESTDIR)
 	ar cr libtevent.a bin/default/*.o
-	cp libtevent.a $(DESTDIR)/usr/lib/
+	cp libtevent.a $(DESTDIR)/usr/lib/$(DEB_HOST_MULTIARCH)
 	# No python for now
 	rm -f $(DESTDIR)/usr/lib/python*/*-packages/_tevent.so
 	dh_install --fail-missing --list-missing --sourcedir=$(DESTDIR)
