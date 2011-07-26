@@ -1,3 +1,9 @@
+tevent (0.9.13-2) UNRELEASED; urgency=low
+
+  * Add libtevent-dbg package.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 26 Jul 2011 20:05:43 +0200
+
 tevent (0.9.13-1) unstable; urgency=low
 
   * New upstream release.

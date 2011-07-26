@@ -60,7 +60,7 @@ binary-arch: build install
 	dh_installman
 	dh_installchangelogs
 	dh_link
-	dh_strip
+	dh_strip --dbg-package=libtevent0-dbg
 	dh_compress
 	dh_fixperms
 	dh_makeshlibs -- -c4
