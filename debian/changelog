@@ -1,3 +1,10 @@
+tevent (0.9.14+git20120207-1) UNRELEASED; urgency=low
+
+  * New upstream snapshot.
+   + Unpacks waf source code. Closes: #654510
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 07 Feb 2012 15:36:52 +0100
+
 tevent (0.9.14-1) unstable; urgency=low
 
   * New upstream release.
