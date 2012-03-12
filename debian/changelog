@@ -1,4 +1,4 @@
-tevent (0.9.15-1) UNRELEASED; urgency=low
+tevent (0.9.15-1) unstable; urgency=low
 
   * New upstream release.
   * Bump standards version to 3.9.3 (no changes).
