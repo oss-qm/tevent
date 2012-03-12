@@ -28,8 +28,10 @@ License: LGPL-3+
  On Debian systems the full text of the GNU Lesser General Public License can
  be found in the `/usr/share/common-licenses/LGPL' file.
 
-Files: libreplace/crypt.c, libreplace/getpass.c
-Copyright: Copyright 1991-1998, Free Software Foundation, Inc.
+Files:
+ libreplace/crypt.c
+ libreplace/getpass.c
+Copyright: 1991-1998, Free Software Foundation, Inc.
 License: LGPL-3+
  On Debian systems the full text of the GNU Lesser General Public License can
  be found in the `/usr/share/common-licenses/LGPL' file.
@@ -69,6 +71,7 @@ Files:
  libreplace/getaddrinfo.h
 Copyright: 1996-2005 The PostgreSQL Global Development Group
 Copyright: 1994 The Regents of the University of California
+License: other
  Permission to use, copy, modify, and distribute this software and its
  documentation for any purpose, without fee, and without a written agreement
  is hereby granted, provided that the above copyright notice and this
