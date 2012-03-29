@@ -1,10 +1,10 @@
-tevent (0.9.15-2) UNRELEASED; urgency=low
+tevent (0.9.15-2) unstable; urgency=low
 
   * Only depend on (optional) libaio-dev on Linux. Thanks Robert Millan.
     Closes: #650954
   * debian/copyright: Refer to LGPL-3 license file rather than symlink.
 
- -- Jelmer Vernooij <jelmer@debian.org>  Thu, 29 Mar 2012 03:42:38 +0200
+ -- Jelmer Vernooij <jelmer@debian.org>  Thu, 29 Mar 2012 00:42:38 +0200
 
 tevent (0.9.15-1) unstable; urgency=low
 
