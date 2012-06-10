@@ -1,4 +1,4 @@
-tevent (0.9.16-1) UNRELEASED; urgency=low
+tevent (0.9.16-1) unstable; urgency=low
 
   * New upstream release.
   * Switch to debhelper 9.
