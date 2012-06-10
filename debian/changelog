@@ -1,3 +1,9 @@
+tevent (0.9.16-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 10 Jun 2012 13:23:16 +0200
+
 tevent (0.9.15-2) unstable; urgency=low
 
   * Only depend on (optional) libaio-dev on Linux. Thanks Robert Millan.
