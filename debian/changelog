@@ -1,6 +1,7 @@
 tevent (0.9.16-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Switch to debhelper 9.
 
  -- Jelmer Vernooij <jelmer@debian.org>  Sun, 10 Jun 2012 13:23:16 +0200
 
