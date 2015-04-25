@@ -58,9 +58,6 @@ struct poll_event_context {
 	 * Signal fd to wake the poll() thread
 	 */
 	int signal_fd;
-
-	/* information for exiting from the event loop */
-	int exit_code;
 };
 
 static int poll_event_context_destructor(struct poll_event_context *poll_ev)
@@ -419,8 +416,8 @@ static bool poll_event_setup_fresh(struct tevent_context *ev,
 				poll_ev->fdes[i]->additional_flags = i;
 			}
 		}
+		poll_ev->deleted = false;
 	}
-	poll_ev->deleted = false;
 
 	if (poll_ev->fresh == NULL) {
 		return true;
@@ -546,7 +543,7 @@ static int poll_event_loop_poll(struct tevent_context *ev,
 	   the handler to remove itself when called */
 
 	for (fde = ev->fd_events; fde; fde = fde->next) {
-		unsigned idx = fde->additional_flags;
+		uint64_t idx = fde->additional_flags;
 		struct pollfd *pfd;
 		uint16_t flags = 0;
 
