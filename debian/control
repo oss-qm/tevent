@@ -4,11 +4,11 @@ Priority: optional
 Maintainer: Jelmer Vernooij <jelmer@debian.org>
 Build-Depends: debhelper (>= 9),
                libaio-dev [linux-any],
-               libtalloc-dev (>= 2.0.6~),
+               libtalloc-dev (>= 2.1.2~),
                pkg-config,
                python,
                python-all-dev (>= 2.6.6-3),
-               python-talloc-dev (>= 2.0.6~)
+               python-talloc-dev (>= 2.1.2~)
 Standards-Version: 3.9.3
 Homepage: http://tevent.samba.org/
 Vcs-Bzr: http://bzr.debian.org/pkg-samba/tevent/unstable
