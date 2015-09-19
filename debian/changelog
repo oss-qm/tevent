@@ -1,4 +1,4 @@
-tevent (0.9.25-1) UNRELEASED; urgency=medium
+tevent (0.9.25-1) unstable; urgency=medium
 
   * Fix watch file.
   * New upstream release.
