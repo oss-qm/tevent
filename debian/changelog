@@ -2,6 +2,7 @@ tevent (0.9.25-1) UNRELEASED; urgency=medium
 
   * Fix watch file.
   * New upstream release.
+  * Bump standards version to 3.9.6 (no changes).
 
  -- Jelmer Vernooij <jelmer@debian.org>  Sat, 19 Sep 2015 03:16:10 +0000
 
