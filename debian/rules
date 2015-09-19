@@ -32,8 +32,8 @@ get-packaged-orig-source:
 override_dh_auto_clean:
 	-./buildtools/bin/waf clean
 	rm -f buildtools/wafsamba/*.pyc \
-		buildtools/wafadmin/*.pyc \
-		buildtools/wafadmin/Tools/*.pyc
+		third_party/waf/wafadmin/*.pyc \
+		third_party/waf/wafadmin/Tools/*.pyc
 	rm -rf build
 
 override_dh_auto_install:
