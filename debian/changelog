@@ -1,3 +1,9 @@
+tevent (0.9.26-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 08 Nov 2015 21:42:12 +0000
+
 tevent (0.9.25-1) unstable; urgency=medium
 
   * Fix watch file.
