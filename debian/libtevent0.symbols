@@ -16,6 +16,7 @@ libtevent.so.0 #PACKAGE# #MINVER#
  TEVENT_0.9.23@TEVENT_0.9.23 0.9.25
  TEVENT_0.9.24@TEVENT_0.9.24 0.9.25
  TEVENT_0.9.25@TEVENT_0.9.25 0.9.25
+ TEVENT_0.9.26@TEVENT_0.9.26 0.9.26
  _tevent_add_fd@TEVENT_0.9.9 0.9.9
  _tevent_add_signal@TEVENT_0.9.9 0.9.9
  _tevent_add_timer@TEVENT_0.9.9 0.9.9
@@ -93,6 +94,8 @@ libtevent.so.0 #PACKAGE# #MINVER#
  tevent_set_default_backend@TEVENT_0.9.9 0.9.9
  tevent_set_trace_callback@TEVENT_0.9.16 0.9.16
  tevent_signal_support@TEVENT_0.9.9 0.9.9
+ tevent_thread_proxy_create@TEVENT_0.9.26 0.9.26
+ tevent_thread_proxy_schedule@TEVENT_0.9.26 0.9.26
  tevent_timeval_add@TEVENT_0.9.9 0.9.9
  tevent_timeval_compare@TEVENT_0.9.9 0.9.9
  tevent_timeval_current@TEVENT_0.9.9 0.9.9
