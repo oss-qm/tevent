@@ -1,14 +1,16 @@
 # waf build tool for building IDL files with pidl
 
-import Build
-from samba_utils import *
-from samba_autoconf import *
-
+import os
+import Build, Logs, Utils
 from Configure import conf
 
 @conf
 def SAMBA_CHECK_PYTHON(conf, mandatory=True, version=(2,4,2)):
     # enable tool to build python extensions
+    if conf.env.HAVE_PYTHON_H:
+        conf.check_python_version(version)
+        return
+
     interpreters = []
 
     if conf.env['EXTRA_PYTHON']:
@@ -21,7 +23,7 @@ def SAMBA_CHECK_PYTHON(conf, mandatory=True, version=(2,4,2)):
         try:
             conf.check_python_version((3, 3, 0))
         except Exception:
-            warn('extra-python needs to be Python 3.3 or later')
+            Logs.warn('extra-python needs to be Python 3.3 or later')
             raise
         interpreters.append(conf.env['PYTHON'])
         conf.setenv('default')
@@ -55,6 +57,10 @@ def SAMBA_CHECK_PYTHON_HEADERS(conf, mandatory=True):
     else:
         conf.msg("python headers", "using cache")
 
+    # we don't want PYTHONDIR in config.h, as otherwise changing
+    # --prefix causes a complete rebuild
+    del(conf.env.defines['PYTHONDIR'])
+    del(conf.env.defines['PYTHONARCHDIR'])
 
 def _check_python_headers(conf, mandatory):
     conf.check_python_headers(mandatory=mandatory)
@@ -109,7 +115,6 @@ def SAMBA_PYTHON(bld, name,
                       target_type='PYTHON',
                       install_path='${PYTHONARCHDIR}',
                       allow_undefined_symbols=True,
-                      allow_warnings=True,
                       install=install,
                       enabled=enabled)
 
