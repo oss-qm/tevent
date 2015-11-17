@@ -1,0 +1,36 @@
+Description: Automatically generated patch (0.9.26-2)
+ Last (up to) 3 git changes, FYI:
+ .
+ commit 3f9621cadb641c9763da675e91a71f016240642c
+ Author: Jelmer Vernooij <jelmer@jelmer.uk>
+ Date:   Tue Nov 17 00:58:02 2015 +0000
+ .
+     releasing package tevent version 0.9.26-2
+ .
+ commit 8014e9ca812baec9ed7956f3edc295fd423bb458
+ Author: Jelmer Vernooij <jelmer@jelmer.uk>
+ Date:   Tue Nov 17 00:57:53 2015 +0000
+ .
+     Set LD_LIBRARY_PATH during tests. Fixes FTBFS. Closes: #805319
+ .
+ commit 11ff14f35b4deac9b79cd84efdc72af13691332a
+ Author: Jelmer Vernooij <jelmer@jelmer.uk>
+ Date:   Sun Nov 8 21:43:01 2015 +0000
+ .
+     releasing package tevent version 0.9.26-1
+Author: Jelmer Vernooij <jelmer@debian.org>
+
+---
+
+--- tevent-0.9.26.orig/wscript
++++ tevent-0.9.26/wscript
+@@ -133,9 +133,6 @@ def test(ctx):
+     '''test tevent'''
+     print("The tevent testsuite is part of smbtorture in samba4")
+ 
+-    samba_utils.ADD_LD_LIBRARY_PATH('bin/shared')
+-    samba_utils.ADD_LD_LIBRARY_PATH('bin/shared/private')
+-
+     pyret = samba_utils.RUN_PYTHON_TESTS(['bindings.py'])
+     sys.exit(pyret)
+ 
