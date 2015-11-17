@@ -1,4 +1,4 @@
-tevent (0.9.26-2) UNRELEASED; urgency=medium
+tevent (0.9.26-2) unstable; urgency=medium
 
   * Set LD_LIBRARY_PATH during tests. Fixes FTBFS. Closes: #805319
 

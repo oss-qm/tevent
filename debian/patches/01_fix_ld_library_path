@@ -1,7 +1,7 @@
 diff --git a/lib/tevent/wscript b/lib/tevent/wscript
 index 4c5fe0c..73871d8 100755
---- a/lib/tevent/wscript
-+++ b/lib/tevent/wscript
+--- a/wscript
++++ b/wscript
 @@ -133,6 +133,9 @@ def test(ctx):
      '''test tevent'''
      print("The tevent testsuite is part of smbtorture in samba4")
