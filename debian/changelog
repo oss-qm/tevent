@@ -1,3 +1,9 @@
+tevent (0.9.26-3) UNRELEASED; urgency=medium
+
+  * Fix Vcs-Git header.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sat, 12 Dec 2015 01:17:11 +0000
+
 tevent (0.9.26-2) unstable; urgency=medium
 
   * Set LD_LIBRARY_PATH during tests. Fixes FTBFS. Closes: #805319
