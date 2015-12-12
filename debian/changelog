@@ -1,4 +1,4 @@
-tevent (0.9.26-3) UNRELEASED; urgency=low
+tevent (0.9.26-3) unstable; urgency=low
 
   * debian/copyright: Set short names for licenses.
   * Fix Vcs-Git header.
