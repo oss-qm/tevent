@@ -70,7 +70,7 @@ Files:
 Copyright:
   1996-2005 The PostgreSQL Global Development Group
   1994 The Regents of the University of California
-License:
+License: PostgreSQL
  Permission to use, copy, modify, and distribute this software and its
  documentation for any purpose, without fee, and without a written agreement
  is hereby granted, provided that the above copyright notice and this
@@ -92,7 +92,7 @@ Files:
  libreplace/inet_ntop.c
  libreplace/inet_pton.c
 Copyright: 1996-2001 Internet Software Consortium
-License:
+License: ISC
  Permission to use, copy, modify, and distribute this software for any
  purpose with or without fee is hereby granted, provided that the above
  copyright notice and this permission notice appear in all copies.
@@ -108,7 +108,7 @@ License:
 
 Files: libreplace/snprintf.c
 Copyright: 1995 Patrick Powell
-License:
+License: PP
  This code is based on code written by Patrick Powell (papowell@astart.com)
  It may be used for any purpose as long as this notice remains intact
  on all source code distributions
