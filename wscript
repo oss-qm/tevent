@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 APPNAME = 'tevent'
-VERSION = '0.9.26'
+VERSION = '0.9.28'
 
 blddir = 'bin'
 
@@ -107,7 +107,7 @@ def build(bld):
                           abi_directory='ABI',
                           abi_match='tevent_* _tevent_*',
                           vnum=VERSION,
-                          public_headers='tevent.h',
+                          public_headers=('' if private_library else 'tevent.h'),
                           public_headers_install=not private_library,
                           pc_files='tevent.pc',
                           private_library=private_library)
@@ -132,6 +132,9 @@ def build(bld):
 def test(ctx):
     '''test tevent'''
     print("The tevent testsuite is part of smbtorture in samba4")
+
+    samba_utils.ADD_LD_LIBRARY_PATH('bin/shared')
+    samba_utils.ADD_LD_LIBRARY_PATH('bin/shared/private')
 
     pyret = samba_utils.RUN_PYTHON_TESTS(['bindings.py'])
     sys.exit(pyret)
