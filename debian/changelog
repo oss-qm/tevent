@@ -1,5 +1,6 @@
-tevent (0.9.26-4) UNRELEASED; urgency=medium
+tevent (0.9.28-1) UNRELEASED; urgency=medium
 
+  * New upstream version.
   * Update Vcs-Git URL to use new host name (anonscm.debian.org).
 
  -- Jelmer Vernooij <jelmer@debian.org>  Sun, 13 Dec 2015 01:15:17 +0000
