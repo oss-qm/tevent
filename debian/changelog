@@ -1,3 +1,9 @@
+tevent (0.9.28-2) UNRELEASED; urgency=medium
+
+  * Change maintainer to Debian Samba package maintainers.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 03 Apr 2016 20:44:53 +0000
+
 tevent (0.9.28-1) unstable; urgency=medium
 
   * New upstream version.
