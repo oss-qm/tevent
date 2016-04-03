@@ -1,1 +1,10 @@
 *~
+.debhelper/
+*.substvars
+tmp/
+*.debhelper.log
+files
+debhelper-build-stamp
+libtevent-dev/
+libtevent0-dbg/
+libtevent0/
