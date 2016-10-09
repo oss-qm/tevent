@@ -31,22 +31,6 @@ Description: talloc-based event loop library - shared library
  .
  This package provides the shared library file.
 
-Package: libtevent0-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: libtevent0 (= ${binary:Version}), ${misc:Depends}
-Recommends: libc6-dbg, libtalloc2-dbg
-Description: talloc-based event loop library - debug symbols
- tevent is a simple library that can handle the main event loop for an
- application. It supports three kinds of events: timed events, file
- descriptors becoming readable or writable and signals.
- .
- Talloc is used for memory management, both internally and for private
- data provided by users of the library.
- .
- This package provides the debug symbols.
-
 Package: libtevent-dev
 Section: libdevel
 Architecture: any
