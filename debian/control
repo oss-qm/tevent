@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 9),
                python,
                python-all-dev (>= 2.6.6-3),
                python-talloc-dev (>= 2.1.8~)
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://tevent.samba.org/
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-samba/tevent.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-samba/tevent.git
