@@ -20,7 +20,7 @@ Files: debian/*
 Copyright: 2008, Jelmer Vernooij <jelmer@samba.org>
 License: LGPL-3+
 
-Files: libreplace/*
+Files: lib/replace/*
 Copyright:
   1992-1998 2003, 2005, Andrew Tridgell
   2005-2008 Jelmer Vernooij
@@ -29,12 +29,11 @@ Copyright:
 License: LGPL-3+
 
 Files:
- libreplace/crypt.c
- libreplace/getpass.c
+ lib/replace/crypt.c
 Copyright: 1991-1998, Free Software Foundation, Inc.
 License: LGPL-3+
 
-Files: libreplace/timegm.c
+Files: lib/replace/timegm.c
 Copyright: Copyright 1997 Kungliga Tekniska Högskolan
 License: BSD-3
  Redistribution and use in source and binary forms, with or without
@@ -65,8 +64,8 @@ License: BSD-3
  SUCH DAMAGE.
 
 Files:
- libreplace/getaddrinfo.c
- libreplace/getaddrinfo.h
+ lib/replace/getaddrinfo.c
+ lib/replace/getaddrinfo.h
 Copyright:
   1996-2005 The PostgreSQL Global Development Group
   1994 The Regents of the University of California
@@ -89,8 +88,8 @@ License: PostgreSQL
  TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 Files:
- libreplace/inet_ntop.c
- libreplace/inet_pton.c
+ lib/replace/inet_ntop.c
+ lib/replace/inet_pton.c
 Copyright: 1996-2001 Internet Software Consortium
 License: ISC
  Permission to use, copy, modify, and distribute this software for any
@@ -106,13 +105,13 @@ License: ISC
  NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION
  WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-Files: libreplace/snprintf.c
+Files: lib/replace/snprintf.c
 Copyright: 1995 Patrick Powell
 License: PP
  This code is based on code written by Patrick Powell (papowell@astart.com)
  It may be used for any purpose as long as this notice remains intact
  on all source code distributions
 
-Files: libreplace/strptime.c
+Files: lib/replace/strptime.c
 Copyright: 1996-2000 Free Software Foundation, Inc.
 License: LGPL-3+
