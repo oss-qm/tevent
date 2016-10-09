@@ -1,12 +1,21 @@
-tevent (0.9.31-1) UNRELEASED; urgency=medium
+tevent (0.9.31-1) unstable; urgency=medium
 
   [ Jelmer Vernooij ]
   * Change maintainer to Debian Samba package maintainers.
 
   [ Mathieu Parent ]
   * New upstream version.
+    - Update symbols
+    - Bumping talloc Buid-Depends to 2.1.8
+  * Add me to uploaders
+  * Use secure Vcs-* uris
+  * Use automatic debug packages (-dbgsym)
+  * Use https homepage for tevent
+  * Mark libtevent-dev Multi-Arch: same
+  * Fix libreplace path in debian/copyright
+  * Bump standards version to 3.9.8 (no changes)
 
- -- Jelmer Vernooij <jelmer@debian.org>  Sun, 03 Apr 2016 20:44:53 +0000
+ -- Mathieu Parent <sathieu@debian.org>  Sun, 09 Oct 2016 20:47:15 +0200
 
 tevent (0.9.28-1) unstable; urgency=medium
 
