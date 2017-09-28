@@ -22,6 +22,8 @@ libtevent.so.0 #PACKAGE# #MINVER#
  TEVENT_0.9.29@TEVENT_0.9.29 0.9.29
  TEVENT_0.9.30@TEVENT_0.9.30 0.9.30
  TEVENT_0.9.31@TEVENT_0.9.31 0.9.31
+ TEVENT_0.9.32@TEVENT_0.9.32 0.9.32
+ TEVENT_0.9.33@TEVENT_0.9.33 0.9.33
  _tevent_add_fd@TEVENT_0.9.9 0.9.9
  _tevent_add_signal@TEVENT_0.9.9 0.9.9
  _tevent_add_timer@TEVENT_0.9.9 0.9.9
