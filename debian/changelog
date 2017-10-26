@@ -1,3 +1,9 @@
+tevent (0.9.33-2) unstable; urgency=medium
+
+  * Upload to sid 
+
+ -- Mathieu Parent <sathieu@debian.org>  Thu, 26 Oct 2017 10:27:36 +0200
+
 tevent (0.9.33-1) experimental; urgency=medium
 
   * New upstream version 0.9.33
