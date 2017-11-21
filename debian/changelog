@@ -1,6 +1,17 @@
+tevent (0.9.34-1) unstable; urgency=high
+
+  * New upstream version 0.9.34
+    - Update symbols (no changes)
+    - fix upstream "BUG 13130: smbd on disk file corruption bug under heavy
+      threaded load"
+    - Set urgency to high for this fix
+  * Standards-Version: 4.1.1, no change
+
+ -- Mathieu Parent <sathieu@debian.org>  Thu, 23 Nov 2017 11:04:22 +0100
+
 tevent (0.9.33-2) unstable; urgency=medium
 
-  * Upload to sid 
+  * Upload to sid
 
  -- Mathieu Parent <sathieu@debian.org>  Thu, 26 Oct 2017 10:27:36 +0200
 
