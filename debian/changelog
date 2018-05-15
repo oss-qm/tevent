@@ -1,3 +1,9 @@
+tevent (0.9.36-2) unstable; urgency=low
+
+  * Upload to unstable
+
+ -- Mathieu Parent <sathieu@debian.org>  Tue, 15 May 2018 15:42:59 +0200
+
 tevent (0.9.36-1) experimental; urgency=medium
 
   * New upstream version 0.9.36
