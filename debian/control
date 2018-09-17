@@ -10,6 +10,7 @@ Build-Depends: debhelper (>= 11),
                python,
                python-all-dev (>= 2.6.6-3),
                python-talloc-dev (>= 2.1.11~)
+Rules-Requires-Root: no
 Standards-Version: 4.2.1
 Homepage: https://tevent.samba.org/
 Vcs-Browser: https://salsa.debian.org/samba-team/tevent
