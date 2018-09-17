@@ -1,3 +1,14 @@
+tevent (0.9.37-1) unstable; urgency=medium
+
+  * New upstream version 0.9.37
+    - Bump build-depend on talloc to 2.1.13
+    - Update symbols
+  * d/control: Standards-Version: 4.2.1
+  * d/control: Rules-Requires-Root: no
+  * d/rules: Remove dbgsym-migration in override_dh_strip
+
+ -- Mathieu Parent <sathieu@debian.org>  Mon, 17 Sep 2018 21:18:44 +0200
+
 tevent (0.9.36-2) unstable; urgency=low
 
   * Upload to unstable
