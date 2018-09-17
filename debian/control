@@ -5,11 +5,11 @@ Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
 Uploaders: Jelmer Vernooij <jelmer@debian.org>, Mathieu Parent <sathieu@debian.org>
 Build-Depends: debhelper (>= 11),
                libaio-dev [linux-any],
-               libtalloc-dev (>= 2.1.11~),
+               libtalloc-dev (>= 2.1.13~),
                pkg-config,
                python,
                python-all-dev (>= 2.6.6-3),
-               python-talloc-dev (>= 2.1.11~)
+               python-talloc-dev (>= 2.1.13~)
 Rules-Requires-Root: no
 Standards-Version: 4.2.1
 Homepage: https://tevent.samba.org/
